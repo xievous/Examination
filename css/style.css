@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navigation img {
+  width: 5%;
+  height: 10vh;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  background-color: #2e5266;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: black solid 2px;
+}
+
+.navigation a {
+  margin-right: auto;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: #2e5266;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.footer article {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* index.html */
+
+.welcome figure {
+  background-image: url("../photos/05-night.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  margin: 0;
+}
+
+.welcome article {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  color: #ffffff;
+  width: 75%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  width: 80%;
+}
+
+.hotel-rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hotel-rooms article {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  color: #ffffff;
+  width: 75%;
+}
+
+.hotel-rooms button {
+  border-radius: 20px;
+  padding: 3%;
+  border-color: #f7f0f5;
+  background-color: #f7f0f5;
+  font-size: 1rem;
+}
+
+.hotel-rooms__regular,
+.hotel-rooms__deluxe,
+.hotel-rooms__suite {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+.hotel-rooms__regular {
+  background-image: url("../photos/01-day.jpg");
+}
+
+.hotel-rooms__deluxe {
+  background-image: url("../photos/06-day.jpg");
+}
+
+.hotel-rooms__suite {
+  background-image: url("../photos/04-day.jpg");
+}
+
+/* About.html */
+
+.about-bonzai img {
+  width: 100%;
+  height: 80vh;
+  margin-top: 3%;
+}
+
+.about-bonzai article {
+  color: #2e5266;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 40vh;
+  grid-gap: 30px;
+  margin-top: 3%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.about-grid a {
+  text-decoration: none;
+  background-color: #6daedb;
+  padding: 3%;
+  margin-top: 8%;
+  color: black;
+}
+
+.about-grid p {
+  margin: 0;
+}
+
+.about-grid__city,
+.about-grid__facilities,
+.about-grid__present,
+.about-grid__events {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-grid__city,
+.about-grid__present {
+  background-color: #b0b5b3;
+}
+
+.about-grid__facilities,
+.about-grid__events {
+  background-color: #dbdbdb;
+}
+
+/* Booking.html */
+
+.search-bar {
+  background-color: #1b4353;
+  width: 100%;
+}
+
+.search-bar article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.search-bar__option {
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.search-bar__button {
+  height: 3vh;
+  background-color: #6daedb;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3%;
+  grid-gap: 30px;
+}
+
+.rooms img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation img {
+    width: 15%;
+    height: 8vh;
+  }
+
+  .welcome article {
+    padding-top: 0;
+    font-size: 18px;
+    align-items: flex-start;
+  }
+
+  .hotel-rooms {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-bonzai img {
+    height: 30vh;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-bar__option,
+  .search-bar__button {
+    height: auto;
+  }
+
+  .rooms {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
+  .about-grid h3,
+  .about-grid p,
+  .about-grid a {
+    margin: 3%;
+    font-size: 18px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
